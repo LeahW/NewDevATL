@@ -3,57 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <title>NewDevATL</title>
-  <link rel='stylesheet' href='main.css' type='text/css'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel='stylesheet' href='css/normalize.css' type='text/css'>
+  <link rel='stylesheet' href='css/foundation.css' type='text/css'>
+  <link rel='stylesheet' href='css/main.css' type='text/css'>
+  <script src="/js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <h1>NewDevATL: A resource guide for beginner-friendly tech events around Atlanta</h1>
-  <section class="events">
-    <h2> Upcoming Events</h2>
-    <form id="event-search">
-      <input type="search" placeholder="Search Events">
-    </form>
-    <ul>
-      <li class="event">
-        <h3 class="event-title"> Free Code Camp Atlanta meetup </h3>
-        <p class="date">Saturday July 18, 2015 at 10 AM</p>
-        <p class="address">
-          <span class="name">Starbucks at The Prado Shopping Center</span>
-          <span class="street-address"> 5610 Roswell Rd</span>
-          <span class="region">Sandy Springs, GA</span>
-        </p>
-        <p class="info">
-           See <a href="https://www.facebook.com/groups/free.code.camp.atlanta/815262645189979/">Facebook page</a> for more info!
-        </p>
+  <nav id="top-bar" class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <span><a href="#" id="brand">NewDevATL</a></span>
       </li>
-      <li class="event">
-        <h3 class="event-title">ConnectJS Conference (must purchase tickets for event)</h3>
-        <p class="date">October 16 - 17, 2015</p>
-        <p class="address">
-          <span class="name">Cobb Galleria Center</span>
-          <span class="street-address">2 Galleria Pkwy SE</span>
-          <span class="region">Atlanta, GA 30339</span>
-        </p>
-        <p class="info">See <a href="http://connect-js.com/">ConnectJS</a> for more info!</p>
-      </li>
-      <li class="event">
-        <h3 class="event-title"> HackATL </h3>
-        <p class="date">October 16-18</p>
-        <p class="address">
-          <span class="name">Emory University's Goizueta Business School</span>
-          <span class="street-address">1300 Clifton Rd</span>
-          <span class="region">Atlanta, GA 30322</span>
-        </p>
-        <p class="info">
-           See <a href="http://hackatl.org/">hackatl.org</a> for more info!
-        </p>
-      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-    <p class="add-event">
-      Create an issue for <a href="https://github.com/LeahW/NewDevATL">NewDevATL</a> to list your event
-    </p>
-  </section>
+
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-form">
+          <div class="row">
+            <div class="small-12 columns">
+              <input id="event-search" type="text" placeholder="Search...">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+
+  <main>
+    <h1 class="columns"> Upcoming Events</h2>
+    <h2 class="columns">
+      <small>A resource guide for beginner-friendly tech events around Atlanta</small>
+    </h2>
+    <section class="events">
+
+
+      <div class="row event-row">
+
+        <div class="small-12 large-4 columns">
+          <div class="event row">
+            <div class="columns event-title">
+              <h3 class="event-title-text"> Free Code Camp Atlanta meetup </h3>
+            </div>
+            <div class="event-body small-12 columns">
+              <p class="date">Saturday July 18, 2015 at 10 AM</p>
+              <p class="address">
+                <span class="name">Starbucks at The Prado Shopping Center</span>
+                <span class="street-address"> 5610 Roswell Rd</span>
+                <span class="region">Sandy Springs, GA</span>
+              </p>
+            </div>
+
+            <div class="info columns">
+              <span class="more-info"><a href="https://www.facebook.com/groups/free.code.camp.atlanta/815262645189979/">more info</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="small-12 large-4 columns">
+          <div class="event row">
+            <div class="columns event-title">
+              <h3 class="event-title-text">ConnectJS Conference (must purchase tickets for event)</h3>
+            </div>
+            <div class="event-body small-12 columns">
+              <p class="date">October 16 - 17, 2015</p>
+              <p class="address">
+                <span class="name">Cobb Galleria Center</span>
+                <span class="street-address">2 Galleria Pkwy SE</span>
+                <span class="region">Atlanta, GA 30339</span>
+              </p>
+            </div>
+
+            <div class="info columns">
+              <span class="more-info"><a href="http://connect-js.com/">more info</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="small-12 large-4 columns end">
+          <div class="event row">
+            <div class="columns event-title">
+              <h3 class="event-title-text"> HackATL </h3>
+            </div>
+            <div class="event-body small-12 columns">
+              <p class="date">October 16-18</p>
+              <p class="address">
+                <span class="name">Emory University's Goizueta Business School</span>
+                <span class="street-address">1300 Clifton Rd</span>
+                <span class="region">Atlanta, GA 30322</span>
+              </p>
+            </div>
+
+            <div class="info columns">
+              <span class="more-info"><a href="http://hackatl.org/">more info</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-12 columns">
+        <p class="add-event">
+          Create an issue for <a href="https://github.com/LeahW/NewDevATL">NewDevATL</a> to list your event
+        </p>
+      </div>
+    </section>
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="main.js"></script>
+  <script src="js/vendor/fastclick.js"> </script>
+  <script src="js/main.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
 </body>
 </html>

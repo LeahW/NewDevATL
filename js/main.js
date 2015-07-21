@@ -5,16 +5,15 @@
     });
 
 
-    $('#event-search input').on('keyup', function(){
+    $('#event-search').on('keyup', function(){
       var query = $(this).val();
       var filter = new RegExp('.*' + query + '.*','i');
-      console.log(filter);
 
       $('.event').each(function(i,value) {
         if ($(this).children().text().match(filter)) {
-          $(this).show();
+          $(this).parent().show();
         }else {
-          $(this).hide();
+          $(this).parent().hide();
         }
       });
     });

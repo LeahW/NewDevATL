@@ -3,19 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>NewDevATL</title>
+  <!--Initialize Font-->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <!--Initialize Stylesheets-->
   <link rel='stylesheet' href='css/normalize.css' type='text/css'>
   <link rel='stylesheet' href='css/foundation.css' type='text/css'>
+  <link rel='stylesheet' href='css/foundation-icons.css' type='text/css'>
   <link rel='stylesheet' href='css/main.css' type='text/css'>
+
+  <!--Initialize JavaScript-->
   <script src="/js/vendor/modernizr.js"></script>
 </head>
+
 <body>
+  <!--Navigation Top-Bar-->
   <nav id="top-bar" class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
+        <!--Drop-down Menu-->
+      <li class="toggle-topbar.menu-icon">
+        <a href="#" aria-expanded="false" aria-controls="tinyDrop" data-dropdown="tinyDrop">
+            <span><i class="fi-list size-18"></i></span>
+        </a>
+          <ul tabindex="-1" class="f-dropdown" id="tinyDrop" aria-hidden="true" data-dropdown-content="">
+              <li><a href="#">News</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </li>
+      
+      <!--Brand-->
       <li class="name">
         <span><a href="#" id="brand">NewDevATL</a></span>
       </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+
     </ul>
 
     <section class="top-bar-section">
@@ -23,7 +47,7 @@
         <li class="has-form">
           <div class="row">
             <div class="small-12 columns">
-              <input id="event-search" type="text" placeholder="Search...">
+              <input id="event-search" type="text" placeholder="Search">
             </div>
           </div>
         </li>

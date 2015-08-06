@@ -35,10 +35,10 @@ nav ul li a {
   text-decoration: bold;
 }
 a:hover, a:focus {
-  color: #ff932f;
+  color: #0000ff;
 }
 a {
-  color: #0000ff;
+  color: #005b79;
 }
 /*****************************************************************************
 * Top Bar Styles

@@ -1,12 +1,10 @@
 /*****************************************************************************
 * Basic Typography
 *****************************************************************************/
-
 html, body {
   background-color: #fafafa;
   font-size: 14px;
 }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto, sans-serif;
 }
@@ -22,52 +20,67 @@ h3 {
   font-size: 1.6875rem;
   font-weight: 300;
 }
+nav ul li {
+  max-width: 100%;
+  width: 100px;
+}
 
+nav ul li a {
+  color: #ffffff;
+  font-size: 1.428571429em;
+}
+#NewDevATL {
+  color: white;
+  padding-top: 5px;
+  padding-left: 12.5px;
+  text-decoration: bold;
+}
 /*****************************************************************************
 * Top Bar Styles
 *****************************************************************************/
 #top-bar.top-bar{
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-  background-color: #3F51B5;
 }
-#top-bar .name span {
-  font-size: 1.428571429rem;
+#top-bar .name {
   margin-top: auto;
 }
 .top-bar.expanded .title-area {
-  background-color: #3F51B5;
+  background-color: #333;
 }
-.top-bar-section .has-form {
-  background-color: #3F51B5;
+.top-bar-section {
+  background-color: #333;
+  max-width: 100%;
 }
-
+.toggle-topbar.menu-icon a {
+  color: #ffffff;
+}
 /*****************************************************************************
 * Event Styles
 *****************************************************************************/
 .event.row {
   box-shadow: 0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
   margin: 1em;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
 }
 .row {
-  max-width:none;
+  max-width:100%;
 }
 .event-title {
-  background-color: #c5cae9;
+  background-color: #ff932f;
   padding: 1rem;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
 }
-
 .event-title-text {
   margin: 0;
 }
-
 .event-body {
   margin-top: 1em;
 }
-
 .address span {
   display: block;
 }
-
 .info {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: .5rem;
@@ -75,7 +88,7 @@ h3 {
 .info a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  color: #3f51b5;
+  color: #rgb(35, 129, 175);
   height: 36px;
   min-width: 64px;
   padding: 0.5em;
@@ -90,4 +103,55 @@ h3 {
 }
 .info a:active, .info a:focus {
   outline: none;
+}
+/*****************************************************************************
+* Media Queries - Responsive Design
+*****************************************************************************/
+@media only screen and (max-width: 640px){
+  .top-bar-section {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    float: right;
+  }
+  .top-bar-section li {
+    max-width: 100%;
+    width: 100%;
+  }
+  .has-form {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1042px){
+  .top-bar-section {
+    float: right;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  .top-bar-section ul {
+    max-width: 100%;
+  }
+  .top-bar-section li {
+    max-width: 100%;
+    width: 10%;
+    float: right;
+  }
+  .top-bar-section li:last-child {
+    width: 25%;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 1042px){
+  .top-bar-section li:last-child {
+    width: 20%;
+    text-decoration: none;
+    float: right;
+  }
+  .top-bar-section {
+    text-align: center;
+    padding-left: 20px;
+    max-width: 100%;
+    float: left;
+  }
 }

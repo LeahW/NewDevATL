@@ -1,7 +1,22 @@
 <!DOCTYPE html>
+<!--
+Modification 08/02/2015 (omie w.):
+- Added foundation-icons.css
+- Installed Foundation Icons inside of /icons
+- Added drop-down menu HTML
+
+Modification 08/05/2015 (omie w.):
+- Changed Search icon to drop-down menu in mobile Design
+- Changed the event titles to orange with a 15% top radius
+- Updated main.CSS to reflect changes in drop-down menu
+- Revised and fixed drop-down menu HTML
+- Added Responsive Design for phone/tablet/desktop versions
+-->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>NewDevATL</title>
   <!--Initialize Font-->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -18,129 +33,136 @@
 
 <body>
   <!--Navigation Top-Bar-->
-  <nav id="top-bar" class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-        <!--Drop-down Menu-->
-      <li class="toggle-topbar.menu-icon">
-        <a href="#" aria-expanded="false" aria-controls="tinyDrop" data-dropdown="tinyDrop">
-            <span><i class="fi-list size-18"></i></span>
-        </a>
-          <ul tabindex="-1" class="f-dropdown" id="tinyDrop" aria-hidden="true" data-dropdown-content="">
-              <li><a href="#">News</a></li>
+  <div class="full-width navigation-area">
+    <div class="row">
+      <div class="large-12 columns">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <!-- Title Area -->
+            <li class="name" id="NewDevATL">New<b>Dev</b>ATL</li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+              <a href="#">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- The Section wrap -->
+          <section class="top-bar-section">
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li class="active"><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Jobs</a></li>
+              <li><a href="#">News</a></li>
               <li><a href="#">Contact</a></li>
-          </ul>
-      </li>
-      
-      <!--Brand-->
-      <li class="name">
-        <span><a href="#" id="brand">NewDevATL</a></span>
-      </li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="has-form">
+                <input id="event-search" type="text" placeholder="Search">
+              </li>
+            </ul>
 
-    </ul>
+            <!-- Right Nav Section -->
+            <ul class="right"></ul>
 
-    <section class="top-bar-section">
-      <ul class="right">
-        <li class="has-form">
-          <div class="row">
-            <div class="small-12 columns">
-              <input id="event-search" type="text" placeholder="Search">
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </nav>
+          </section>
+        </nav>
+      </div>
+    </div>
+  </div>
 
 
   <main>
+
     <h1 class="columns"> Upcoming Events</h2>
-    <h2 class="columns">
-      <small>A resource guide for beginner-friendly tech events around Atlanta</small>
-    </h2>
-    <section class="events">
+      <h2 class="columns">
+        <small>A resource guide for beginner-friendly tech events around Atlanta</small>
+      </h2>
+      <section class="events">
 
 
-      <div class="row event-row">
+        <div class="row event-row">
 
-        <div class="small-12 large-4 columns">
-          <div class="event row">
-            <div class="columns event-title">
-              <h3 class="event-title-text"> Free Code Camp Atlanta meetup </h3>
+          <div class="small-12 large-4 columns">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text"> Free Code Camp Atlanta meetup </h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">Saturday July 18, 2015 at 10 AM</p>
+                <p class="address">
+                  <span class="name">Starbucks at The Prado Shopping Center</span>
+                  <span class="street-address"> 5610 Roswell Rd</span>
+                  <span class="region">Sandy Springs, GA</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="https://www.facebook.com/groups/free.code.camp.atlanta/815262645189979/">more info</a></span>
+              </div>
             </div>
-            <div class="event-body small-12 columns">
-              <p class="date">Saturday July 18, 2015 at 10 AM</p>
-              <p class="address">
-                <span class="name">Starbucks at The Prado Shopping Center</span>
-                <span class="street-address"> 5610 Roswell Rd</span>
-                <span class="region">Sandy Springs, GA</span>
-              </p>
-            </div>
+          </div>
 
-            <div class="info columns">
-              <span class="more-info"><a href="https://www.facebook.com/groups/free.code.camp.atlanta/815262645189979/">more info</a></span>
+          <div class="small-12 large-4 columns">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text">ConnectJS Conference (must purchase tickets for event)</h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">October 16 - 17, 2015</p>
+                <p class="address">
+                  <span class="name">Cobb Galleria Center</span>
+                  <span class="street-address">2 Galleria Pkwy SE</span>
+                  <span class="region">Atlanta, GA 30339</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="http://connect-js.com/">more info</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-12 large-4 columns end">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text"> HackATL </h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">October 16-18</p>
+                <p class="address">
+                  <span class="name">Emory University's Goizueta Business School</span>
+                  <span class="street-address">1300 Clifton Rd</span>
+                  <span class="region">Atlanta, GA 30322</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="http://hackatl.org/">more info</a></span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="small-12 large-4 columns">
-          <div class="event row">
-            <div class="columns event-title">
-              <h3 class="event-title-text">ConnectJS Conference (must purchase tickets for event)</h3>
-            </div>
-            <div class="event-body small-12 columns">
-              <p class="date">October 16 - 17, 2015</p>
-              <p class="address">
-                <span class="name">Cobb Galleria Center</span>
-                <span class="street-address">2 Galleria Pkwy SE</span>
-                <span class="region">Atlanta, GA 30339</span>
-              </p>
-            </div>
-
-            <div class="info columns">
-              <span class="more-info"><a href="http://connect-js.com/">more info</a></span>
-            </div>
-          </div>
+        <div class="small-12 columns">
+          <p class="add-event">
+            Create an issue for <a href="https://github.com/LeahW/NewDevATL">NewDevATL</a> to list your event
+          </p>
         </div>
-
-        <div class="small-12 large-4 columns end">
-          <div class="event row">
-            <div class="columns event-title">
-              <h3 class="event-title-text"> HackATL </h3>
-            </div>
-            <div class="event-body small-12 columns">
-              <p class="date">October 16-18</p>
-              <p class="address">
-                <span class="name">Emory University's Goizueta Business School</span>
-                <span class="street-address">1300 Clifton Rd</span>
-                <span class="region">Atlanta, GA 30322</span>
-              </p>
-            </div>
-
-            <div class="info columns">
-              <span class="more-info"><a href="http://hackatl.org/">more info</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="small-12 columns">
-        <p class="add-event">
-          Create an issue for <a href="https://github.com/LeahW/NewDevATL">NewDevATL</a> to list your event
-        </p>
-      </div>
-    </section>
+      </section>
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/vendor/fastclick.js"> </script>
+  <script src="js/vendor/fastclick.js">
+  </script>
   <script src="js/main.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>
-  $(document).foundation();
+    $(document).foundation();
   </script>
 </body>
+
 </html>

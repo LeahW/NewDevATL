@@ -24,7 +24,6 @@ nav ul li {
   max-width: 100%;
   width: 100px;
 }
-
 nav ul li a {
   color: #ffffff;
   font-size: 1.428571429em;
@@ -34,6 +33,12 @@ nav ul li a {
   padding-top: 5px;
   padding-left: 12.5px;
   text-decoration: bold;
+}
+a:hover, a:focus {
+  color: #0000ff;
+}
+a {
+  color: #005b79;
 }
 /*****************************************************************************
 * Top Bar Styles
@@ -53,6 +58,9 @@ nav ul li a {
 }
 .toggle-topbar.menu-icon a {
   color: #ffffff;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: #0000ff;
 }
 /*****************************************************************************
 * Event Styles
@@ -88,7 +96,7 @@ nav ul li a {
 .info a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  color: #rgb(35, 129, 175);
+  color: #0000ff;
   height: 36px;
   min-width: 64px;
   padding: 0.5em;

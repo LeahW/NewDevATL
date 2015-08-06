@@ -59,6 +59,9 @@ a {
 .toggle-topbar.menu-icon a {
   color: #ffffff;
 }
+.top-bar-section ul li > a {
+  font-size: 1.000rem;
+}
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #0000ff;
 }

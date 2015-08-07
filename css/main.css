@@ -35,10 +35,10 @@ nav ul li a {
   text-decoration: bold;
 }
 a:hover, a:focus {
-  color: #ff932f;
+  color: #0e5d71;
 }
 a {
-  color: #0000ff;
+  color: #14414d;
 }
 /*****************************************************************************
 * Top Bar Styles
@@ -63,7 +63,7 @@ a {
   font-size: 1.000rem;
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: #0000ff;
+  background: #0a5366;
 }
 /*****************************************************************************
 * Event Styles
@@ -95,11 +95,12 @@ a {
 .info {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: .5rem;
+  color: red;
 }
 .info a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  color: #0000ff;
+  color: #08495b;
   height: 36px;
   min-width: 64px;
   padding: 0.5em;

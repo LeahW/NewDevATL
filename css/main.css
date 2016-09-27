@@ -21,8 +21,8 @@ h3 {
   font-weight: 300;
 }
 nav ul li {
-  max-width: 100%;
-  width: 100px;
+/*  max-width: 100%; */
+  width: 120px;
 }
 nav ul li a {
   color: #ffffff;
@@ -57,7 +57,7 @@ a {
 }
 .top-bar-section {
   background-color: #333;
-  max-width: 100%;
+  max-width: 100%;  
 }
 .toggle-topbar.menu-icon a {
   color: #ffffff;
